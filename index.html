@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="hero.jpg" >
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">About US</a>
+        </li>
+        <li>
+          <a href="#services"> Services</a>
+        </li>
+        <li>
+          <a href="#contact">Contact Us</a>
+        </li>
+      </ul>
+      <div>
+        <h1 class="logo"><em>Logo</em></h1>
+      </div>
+      <div><button >Book Now</button></div>
+    </nav>
+    <section id="home">
+      <div class="hero-container">
+        <h1>Vist us</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quasi
+          velit totam sint inventore nostrum optio, et saepe reiciendis
+          recusandae perferendis.
+        </p>
+        <button class="hero-btn">Explore</button>
+      </div>
+    </section>
+    <section id="about">
+      <div class="about">
+        <h1>About Us</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+          nobis asperiores molestias aspernatur, sit unde laborum ullam aliquam
+          nihil harum hic quidem corrupti, et nisi minima similique consequuntur
+          officiis? Maiores recusandae fuga laborum iste dignissimos quod
+          voluptas minima voluptate, sunt deserunt placeat, deleniti debitis
+          earum nihil laboriosam blanditiis, cupiditate officia. Cum illo
+          facilis impedit dolore accusamus facere ex blanditiis earum?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+          nobis asperiores molestias aspernatur, sit unde laborum ullam aliquam
+          nihil harum hic quidem corrupti, et nisi minima similique consequuntur
+          officiis? Maiores recusandae fuga laborum iste dignissimos quod
+          voluptas minima voluptate, sunt deserunt placeat, deleniti debitis
+          earum nihil laboriosam blanditiis, cupiditate officia. Cum illo
+          facilis impedit dolore accusamus facere ex blanditiis earum?
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
+          nobis asperiores molestias aspernatur, sit unde laborum ullam aliquam
+          nihil harum hic quidem corrupti, et nisi minima similique consequuntur
+          officiis? Maiores recusandae fuga laborum iste dignissimos quod
+          voluptas minima voluptate, sunt deserunt placeat, deleniti debitis
+          earum nihil laboriosam blanditiis, cupiditate officia. Cum illo
+          facilis impedit dolore accusamus facere ex blanditiis earum?
+        </p>
+      </div>
+    </section>
+    <section id="services">
+    
+        <h1 class="Services">Services</h1>
+   
+  
+          <div class="card-container">
+          <div class="card">
+            <img src="hero.jpg">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+              cumque voluptas excepturi quo consectetur obcaecati consequatur ut
+              officia quibusdam porro.
+            </p>
+          </div>
+          <div class="card">
+            <img src="hero.jpg">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+              cumque voluptas excepturi quo consectetur obcaecati consequatur ut
+              officia quibusdam porro.
+            </p>
+          </div>
+          <div class="card">
+            <img src="hero.jpg">
+            <h1>Heading</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti
+              cumque voluptas excepturi quo consectetur obcaecati consequatur ut
+              officia quibusdam porro.
+            </p>
+          </div> 
+        </div>
+    </section>
+    <section id="contact">
+      <fieldset>
+        <legend><h1><em>Contact Us</em></h1></legend>
+        <form>
+          <div>
+            
+            <input type="text" placeholder="Enter Your Name">
+          </div>
+          <div>
+           
+            <input type="date" placeholder=" Enter Date for booking">
+          </div>
+          <div>
+          
+            <input type="text" placeholder="Enter Your Phone Number">
+
+          </div>
+          <button type="submit" class="openmodal">Book</button>
+        </form>
+       
+      </fieldset>  
+      <dialog  class="modal">
+        <p> Thanks For Booking !</p>
+        <button class="closemodal" > Close</button>
+      </dialog> 
+    </section  >
+  
+    <footer>
+      <marquee><em>Made with love from India ❤️</em></marquee>
+      <span>
+        ©️ copyright 2024
+      </span>
+    </footer>
+   <script >
+const modal=document.querySelector('.modal');
+const openmodal=document.querySelector('.openmodal');
+const closemodal=document.querySelector('.closemodal');
+
+console.log(modal,openmodal,closemodal);
+openmodal.addEventListener('click',(e)=>{
+    e.preventDefault()
+    modal.showModal();
+})
+closemodal.addEventListener('click',()=>{
+    modal.close();
+})
+   </script>
+  </body>
+</html>
